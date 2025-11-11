@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: rootlab
+Version: 0.1.0
+Summary: Shared utilities for root JSON analysis
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+
+# rootlab
+
+Shared utilities for your root JSON analysis.
+
+## Install (editable)
+
+```bash
+pip install -e .
+```
+
+## Notebook setup
+
+```python
+%load_ext autoreload
+%autoreload 2
+from rootlab.geometry import segment_length, segment_width
+from rootlab.io import load_json, save_json
+```
